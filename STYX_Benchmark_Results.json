@@ -1,0 +1,58 @@
+{
+  "benchmark": "STYX vs RAG Real-World Comparison",
+  "version": "1.0.0",
+  "date": "2026-02-03",
+  "author": "Seth Schultz",
+  "status": "Patent pending - implementation details withheld",
+  "methodology": {
+    "data_source": "Real GitHub Issues via GitHub API",
+    "rag_stack": "sentence-transformers/all-MiniLM-L6-v2 + ChromaDB + LangChain",
+    "styx_approach": "Proprietary extraction method",
+    "token_estimation": "characters / 4 (standard approximation)",
+    "note": "Same input data and queries used for both RAG and STYX"
+  },
+  "results": [
+    {
+      "repository": "facebook/react",
+      "issues_analyzed": 287,
+      "full_dataset_tokens": 52892,
+      "rag_tokens": 26056,
+      "styx_tokens": 7940,
+      "styx_vs_rag_efficiency": "3.3x",
+      "styx_token_reduction": "85.0%"
+    },
+    {
+      "repository": "microsoft/vscode",
+      "issues_analyzed": 300,
+      "full_dataset_tokens": 51777,
+      "rag_tokens": 26683,
+      "styx_tokens": 5063,
+      "styx_vs_rag_efficiency": "5.3x",
+      "styx_token_reduction": "90.2%"
+    },
+    {
+      "repository": "kubernetes/kubernetes",
+      "issues_analyzed": 232,
+      "full_dataset_tokens": 45149,
+      "rag_tokens": 29033,
+      "styx_tokens": 8935,
+      "styx_vs_rag_efficiency": "3.2x",
+      "styx_token_reduction": "80.2%"
+    }
+  ],
+  "aggregate": {
+    "repos_tested": 3,
+    "total_issues": 819,
+    "total_full_tokens": 149818,
+    "total_rag_tokens": 81772,
+    "total_styx_tokens": 21938,
+    "styx_vs_rag_efficiency": "3.7x",
+    "styx_token_reduction": "85.4%"
+  },
+  "implementations": ["Python", "Go", "Rust", "TypeScript"],
+  "evidence_hash": "b569e9d57b315a706ccc337ed9efae77d074c573fbba0f8d6396638663f8c24c",
+  "license": {
+    "results": "CC BY 4.0",
+    "implementation": "All rights reserved (patent pending)"
+  }
+}

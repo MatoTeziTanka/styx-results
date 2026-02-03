@@ -1,0 +1,53 @@
+{
+  "benchmark": "STYX Enhanced Validation - 10K+ Scale",
+  "version": "2.0.0",
+  "date": "2026-02-03",
+  "author": "Seth Schultz",
+  "status": "Patent pending - implementation details withheld",
+  "methodology": {
+    "token_counting": "tiktoken (OpenAI production tokenizer, gpt-4 encoding)",
+    "rag_stack": "sentence-transformers/all-MiniLM-L6-v2 + ChromaDB + LangChain",
+    "rag_reranking": "cross-encoder/ms-marco-MiniLM-L-6-v2 (production reranker)",
+    "styx_approach": "Proprietary extraction method",
+    "data_sources": "GitHub Issues (11 repos) + Wikipedia articles",
+    "note": "Same input data and queries used for both RAG and STYX"
+  },
+  "github_results": [
+    {"repository": "facebook/react", "issues": 1000, "styx_vs_rag_rerank": "0.9x", "styx_reduction": "82.5%"},
+    {"repository": "microsoft/vscode", "issues": 1000, "styx_vs_rag_rerank": "1.8x", "styx_reduction": "91.6%"},
+    {"repository": "kubernetes/kubernetes", "issues": 1000, "styx_vs_rag_rerank": "0.8x", "styx_reduction": "81.8%"},
+    {"repository": "golang/go", "issues": 1000, "styx_vs_rag_rerank": "1.0x", "styx_reduction": "86.9%"},
+    {"repository": "rust-lang/rust", "issues": 1000, "styx_vs_rag_rerank": "1.0x", "styx_reduction": "86.4%"},
+    {"repository": "tensorflow/tensorflow", "issues": 382, "styx_vs_rag_rerank": "1.9x", "styx_reduction": "84.0%"},
+    {"repository": "angular/angular", "issues": 1000, "styx_vs_rag_rerank": "0.8x", "styx_reduction": "82.6%"},
+    {"repository": "vercel/next.js", "issues": 1000, "styx_vs_rag_rerank": "1.3x", "styx_reduction": "89.3%"},
+    {"repository": "microsoft/TypeScript", "issues": 1000, "styx_vs_rag_rerank": "0.9x", "styx_reduction": "84.9%"},
+    {"repository": "nodejs/node", "issues": 1000, "styx_vs_rag_rerank": "1.1x", "styx_reduction": "87.0%"},
+    {"repository": "python/cpython", "issues": 500, "styx_vs_rag_rerank": "1.5x", "styx_reduction": "83.5%"}
+  ],
+  "wikipedia_results": {
+    "articles": 181,
+    "styx_vs_rag_rerank": "20.1x",
+    "styx_reduction": "98.5%"
+  },
+  "aggregate": {
+    "total_data_points": 10063,
+    "github_issues": 9882,
+    "wikipedia_articles": 181,
+    "github_repos": 11,
+    "total_full_tokens": 2211709,
+    "total_rag_no_rerank_tokens": 488184,
+    "total_rag_rerank_tokens": 343352,
+    "total_styx_tokens": 312719,
+    "styx_vs_rag_with_reranker": "1.1x",
+    "styx_vs_rag_without_reranker": "1.6x",
+    "styx_vs_full_dataset": "7.1x",
+    "styx_token_reduction": "85.9%",
+    "reranker_improvement": "29.7% fewer tokens"
+  },
+  "evidence_hash": "f21aed4c68467487d0370710c137c97c680f477086d051cd241fe84998a9d322",
+  "license": {
+    "results": "CC BY 4.0",
+    "implementation": "All rights reserved (patent pending)"
+  }
+}
