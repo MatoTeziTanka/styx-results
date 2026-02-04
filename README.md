@@ -207,3 +207,16 @@ Licensing inquiries: [open an issue on this repo](../../issues)
 **Implementation:** All rights reserved (patent pending)
 
 </div>
+
+---
+
+<div align="center">
+
+## Support This Project
+
+[![GoFundMe](https://img.shields.io/badge/GoFundMe-Donate-green)](https://gofund.me/e4d3f3ca0)
+[![GitHub Sponsors](https://img.shields.io/badge/GitHub-Sponsors-pink)](https://github.com/sponsors/MatoTeziTanka)
+
+Patent pending -- independent research by a solo inventor.
+
+</div>
