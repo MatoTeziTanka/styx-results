@@ -1,0 +1,28 @@
+{
+  "benchmark": "STYX Python Implementation",
+  "patent": "Pending #63/975,190",
+  "language": "Python",
+  "dataset": "facebook/react",
+  "document_count": 300,
+  "timestamp": "2026-02-05T02:20:24Z",
+  "token_counts": {
+    "full_context": 150720,
+    "styx_state": 9141
+  },
+  "results": {
+    "reduction_percent": 93.9,
+    "compression_ratio": "16.5x"
+  },
+  "extraction_counts": {
+    "decisions": 50,
+    "constraints": 20,
+    "tensions": 30,
+    "anti_patterns": 20
+  },
+  "methodology": {
+    "tokenizer": "tiktoken cl100k_base",
+    "source": "GitHub API - facebook/react issues",
+    "full_context_format": "Concatenated issue title + body + labels + state",
+    "validation": "Cross-validated with R and Julia implementations"
+  }
+}

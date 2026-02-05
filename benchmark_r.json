@@ -1,0 +1,28 @@
+{
+  "benchmark": "STYX R Implementation",
+  "patent": "Pending #63/975,190",
+  "language": "R",
+  "language_version": "R 4.5.2",
+  "dataset": "facebook/react",
+  "document_count": 300,
+  "timestamp": "2026-02-05T14:05:08Z",
+  "token_counts": {
+    "full_context": 92563,
+    "styx_state": 3243
+  },
+  "results": {
+    "reduction_percent": 96.5,
+    "compression_ratio": "28.5x"
+  },
+  "extraction_counts": {
+    "decisions": 50,
+    "constraints": 20,
+    "tensions": 30,
+    "anti_patterns": 20
+  },
+  "methodology": {
+    "tokenizer": "Character-based approximation (~4 chars/token)",
+    "source": "GitHub API - facebook/react issues",
+    "validation": "Cross-validated with Python and Julia implementations"
+  }
+}

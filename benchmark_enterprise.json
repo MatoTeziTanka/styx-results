@@ -1,0 +1,33 @@
+{
+  "benchmark": "STYX Enterprise Hyper-Scale",
+  "patent": "Pending #63/975,190",
+  "timestamp": "2026-02-05T15:53:51Z",
+  "scale": {
+    "total_documents": 50000,
+    "source": "HuggingFace datasets (Stack Overflow)",
+    "full_context_tokens": 11208701,
+    "styx_tokens": 194221
+  },
+  "results": {
+    "reduction_percent": 98.27,
+    "compression_ratio": "57.7x"
+  },
+  "extraction_counts": {
+    "decisions": 2000,
+    "constraints": 893,
+    "tensions": 2000,
+    "anti_patterns": 2000
+  },
+  "enterprise_projections": {
+    "scenario": "10,000 queries per day",
+    "daily_token_savings": 2210000,
+    "annual_token_savings": 806650000,
+    "annual_cost_savings_usd": 24199.50,
+    "pricing_basis": "GPT-4 @ $0.03/1K input tokens"
+  },
+  "methodology": {
+    "tokenizer": "tiktoken cl100k_base",
+    "source": "HuggingFace koutch/stackoverflow_python dataset",
+    "full_context_format": "Question title + body"
+  }
+}

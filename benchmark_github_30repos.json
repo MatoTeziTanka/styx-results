@@ -1,0 +1,58 @@
+{
+  "benchmark": "STYX Large-Scale GitHub Benchmark",
+  "patent": "Pending #63/975,190",
+  "timestamp": "2026-02-05T14:54:37Z",
+  "repos_count": 30,
+  "repos": [
+    "facebook/react",
+    "vuejs/vue",
+    "angular/angular",
+    "sveltejs/svelte",
+    "nodejs/node",
+    "django/django",
+    "pallets/flask",
+    "fastapi/fastapi",
+    "kubernetes/kubernetes",
+    "docker/compose",
+    "hashicorp/terraform",
+    "ansible/ansible",
+    "rust-lang/rust",
+    "golang/go",
+    "python/cpython",
+    "pytorch/pytorch",
+    "tensorflow/tensorflow",
+    "huggingface/transformers",
+    "redis/redis",
+    "postgres/postgres",
+    "microsoft/vscode",
+    "neovim/neovim",
+    "vercel/next.js",
+    "remix-run/remix",
+    "denoland/deno",
+    "oven-sh/bun",
+    "tailwindlabs/tailwindcss",
+    "storybookjs/storybook",
+    "jestjs/jest",
+    "prettier/prettier"
+  ],
+  "document_count": 6000,
+  "token_counts": {
+    "full_context": 1761612,
+    "styx_state": 85528
+  },
+  "results": {
+    "reduction_percent": 95.14,
+    "compression_ratio": "20.6x"
+  },
+  "extraction_counts": {
+    "decisions": 500,
+    "constraints": 500,
+    "tensions": 468,
+    "anti_patterns": 500
+  },
+  "methodology": {
+    "tokenizer": "tiktoken cl100k_base",
+    "source": "GitHub API - 200 issues per repository",
+    "full_context_format": "Concatenated issue title + body + labels + state"
+  }
+}

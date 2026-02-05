@@ -1,0 +1,27 @@
+{
+  "benchmark": "STYX Julia Implementation",
+  "patent": "Pending #63/975,190",
+  "language": "Julia",
+  "dataset": "facebook/react",
+  "document_count": 300,
+  "timestamp": "2026-02-05T14:17:33Z",
+  "token_counts": {
+    "full_context": 139216,
+    "styx_state": 3307
+  },
+  "results": {
+    "reduction_percent": 97.6,
+    "compression_ratio": "42.1x"
+  },
+  "extraction_counts": {
+    "decisions": 50,
+    "constraints": 20,
+    "tensions": 30,
+    "anti_patterns": 20
+  },
+  "methodology": {
+    "tokenizer": "Character-based approximation (~4 chars/token)",
+    "source": "GitHub API - facebook/react issues",
+    "validation": "Cross-validated with Python and R implementations"
+  }
+}

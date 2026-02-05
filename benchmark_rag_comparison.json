@@ -1,0 +1,33 @@
+{
+  "benchmark": "STYX vs RAG vs GraphRAG Comparison",
+  "patent": "Pending #63/975,190",
+  "dataset": "facebook/react",
+  "document_count": 300,
+  "timestamp": "2026-02-05T02:20:24Z",
+  "query": "How do I handle concurrent state updates in React?",
+  "token_counts": {
+    "full_context": 150720,
+    "basic_rag": 9510,
+    "rag_reranking": 9446,
+    "graphrag": 16731,
+    "styx_on_full": 9141,
+    "styx_on_rag": 1312,
+    "styx_on_reranking": 678,
+    "styx_on_graphrag": 2002
+  },
+  "reductions": {
+    "rag_vs_full": "93.7%",
+    "styx_vs_full": "93.9%",
+    "styx_vs_rag": "86.2%",
+    "styx_vs_graphrag": "88.0%",
+    "styx_on_rag_vs_full": "99.1%",
+    "styx_on_graphrag_vs_full": "98.7%"
+  },
+  "key_finding": "STYX provides 86-88% additional reduction on top of RAG/GraphRAG",
+  "methodology": {
+    "rag_method": "Semantic similarity retrieval (top-k chunks)",
+    "reranking_method": "Cross-encoder reranking after retrieval",
+    "graphrag_method": "Knowledge graph entity extraction + community summaries",
+    "styx_method": "Binding state extraction (decisions, constraints, tensions, anti-patterns)"
+  }
+}
