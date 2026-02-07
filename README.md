@@ -141,9 +141,9 @@ Core algorithm: Patent Pending #63/975,190
 
 ## Contact
 
-- Website: [lightspeedup.com](https://lightspeedup.com)
-- Twitter: [@lightspeedup](https://twitter.com/lightspeedup)
-- Email: contact@lightspeedup.com
+- Website: [https://lightspeedup.com](https://lightspeedup.com)
+- Email: Olympus@lightspeedup.com
+- Questions or feedback: [Open an issue](https://github.com/MatoTeziTanka/styx-results/issues)
 
 ---
 
