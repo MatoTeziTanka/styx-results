@@ -24,7 +24,7 @@ If you spot an error in the benchmark JSON files or README, open an issue or sub
 
 - **Algorithm contributions** — The core extraction algorithm is proprietary and patent-pending
 - **Requests for source code** — The algorithm is not in this repo and will not be shared
-- **Sample text pairs** — We do not publish raw + compressed text pairs to protect IP
+- **Raw + compressed text comparisons** — We do not publish input/output comparisons to protect IP
 
 ## Asking Questions
 

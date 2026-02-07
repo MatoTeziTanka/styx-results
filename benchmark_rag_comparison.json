@@ -28,6 +28,6 @@
     "rag_method": "Semantic similarity retrieval (top-k chunks)",
     "reranking_method": "Cross-encoder reranking after retrieval",
     "graphrag_method": "Knowledge graph entity extraction + community summaries",
-    "styx_method": "Binding state extraction (decisions, constraints, tensions, anti-patterns)"
+    "styx_method": "Structural intelligence extraction (decisions, constraints, tensions, anti-patterns)"
   }
 }
