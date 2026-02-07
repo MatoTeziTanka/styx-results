@@ -1,0 +1,51 @@
+{
+  "benchmark": "STYX vs GraphRAG Quality",
+  "version": "1.0",
+  "date": "2026-02-07",
+  "description": "Blind A/B quality comparison between STYX compressed context and Microsoft GraphRAG context",
+  "methodology": {
+    "type": "Blind A/B with position randomization",
+    "samples": 100,
+    "models_per_sample": 5,
+    "total_judgments": 500,
+    "judge_protocol": "Each model sees two responses to the same question - one generated from STYX context, one from GraphRAG context. Position (A/B) randomized per judgment. Neither judge model nor evaluator knows which is which.",
+    "hardware": "NVIDIA A100 GPU",
+    "errors": 0
+  },
+  "models": [
+    "mistral:7b",
+    "llama3.2",
+    "deepseek-coder-v2:16b",
+    "phi3:mini",
+    "qwen2.5-coder:7b"
+  ],
+  "results": {
+    "styx_wins": 305,
+    "graphrag_wins": 179,
+    "ties": 16,
+    "styx_win_rate": 0.61,
+    "graphrag_win_rate": 0.358,
+    "tie_rate": 0.032
+  },
+  "by_model": {
+    "mistral:7b": { "styx_win_rate": 0.65 },
+    "llama3.2": { "styx_win_rate": 0.60 },
+    "deepseek-coder-v2:16b": { "styx_win_rate": 0.57 },
+    "phi3:mini": { "styx_win_rate": 0.64 },
+    "qwen2.5-coder:7b": { "styx_win_rate": 0.59 }
+  },
+  "by_category": {
+    "architecture": { "styx_win_rate": 0.70 },
+    "documentation": { "styx_win_rate": 0.64 },
+    "github_issue": { "styx_win_rate": 0.56 },
+    "stackoverflow": { "styx_win_rate": 0.54 }
+  },
+  "compression_advantage": {
+    "graphrag_tokens": 16731,
+    "styx_on_graphrag_tokens": 2002,
+    "additional_reduction": "88.0%"
+  },
+  "verdict": "STYX produces better answers than GraphRAG while compressing 88% further",
+  "patent": "Pending #63/975,190",
+  "note": "This file contains aggregate metrics only. No sample texts, STYX outputs, GraphRAG contexts, or raw documents are included."
+}

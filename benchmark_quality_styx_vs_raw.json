@@ -1,0 +1,37 @@
+{
+  "benchmark": "STYX vs Raw Context Quality",
+  "version": "1.0",
+  "date": "2026-02-07",
+  "description": "Blind A/B quality comparison between STYX compressed context and full raw context",
+  "methodology": {
+    "type": "Blind A/B with position randomization",
+    "samples": 100,
+    "models_per_sample": 5,
+    "total_judgments": 500,
+    "judge_protocol": "Each model sees two responses to the same question - one generated from STYX context, one from full context. Position (A/B) randomized per judgment. Neither judge model nor evaluator knows which is which.",
+    "hardware": "NVIDIA A100 GPU"
+  },
+  "models": [
+    "mistral:7b",
+    "llama3.2",
+    "deepseek-coder-v2:16b",
+    "phi3:mini",
+    "qwen2.5-coder:7b"
+  ],
+  "results": {
+    "styx_wins": 239,
+    "raw_wins": 238,
+    "ties": 23,
+    "styx_win_rate": 0.478,
+    "raw_win_rate": 0.476,
+    "tie_rate": 0.046
+  },
+  "verdict": "Statistical parity - STYX compressed context produces equivalent quality answers to full raw context",
+  "compression_context": {
+    "average_reduction": "98.27%",
+    "documents_validated": 60900,
+    "max_compression_ratio": "57.7x"
+  },
+  "patent": "Pending #63/975,190",
+  "note": "This file contains aggregate metrics only. No sample texts, STYX outputs, or raw contexts are included."
+}
