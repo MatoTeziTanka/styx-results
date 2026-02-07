@@ -3,8 +3,8 @@
 **Selective Token Yield eXtraction** - Context compression for LLMs
 
 [![Patent Pending](https://img.shields.io/badge/Patent-Pending%20%2363%2F975%2C190-blue)](https://lightspeedup.com)
-[![Validated](https://img.shields.io/badge/Validated-60%2C900%20Documents-green)](https://github.com/lightspeedup/styx-results)
-[![Quality](https://img.shields.io/badge/Quality-Beats%20GraphRAG%2061%25-orange)](https://github.com/lightspeedup/styx-results)
+[![Validated](https://img.shields.io/badge/Validated-60%2C900%20Documents-green)](https://github.com/MatoTeziTanka/styx-results)
+[![Quality](https://img.shields.io/badge/Quality-Beats%20GraphRAG%2061%25-orange)](https://github.com/MatoTeziTanka/styx-results)
 
 ## Key Results
 
